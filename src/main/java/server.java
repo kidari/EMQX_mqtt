@@ -8,7 +8,7 @@ public class server {
     public static void main(String[] args) throws Exception {
 //        String host = "tcp://172.16.40.173:1883";
         String host = "tcp://119.3.210.123:1883";
-        String topic = "lwm2m/866971033461919/dn";
+        String topic = "lwm2m/gdzytest001/dn";
 //        String topic = "testtopic";
         String clientId = "server";// clientId不能重复
         MqttConnectOptions options = new MqttConnectOptions();
@@ -26,9 +26,9 @@ public class server {
 //            String line = scanner.nextLine();
             String line = "{\n" +
                     "    \"reqID\": \"2\",\n" +
-                    "    \"msgType\": \"discover\",\n" +
+                    "    \"msgType\": \"observe\",\n" +
                     "    \"data\": {\n" +
-                    "        \"path\": \"/3/0\"\n" +
+                    "        \"path\": \"/19/0/0\"\n" +
                     "    }\n" +
                     "}";
             message.setPayload(line.getBytes());
