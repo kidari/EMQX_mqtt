@@ -3,7 +3,7 @@ import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-public class consumer {
+public class response {
     public static void main(String[] args) throws Exception {
 //        String host = "tcp://172.16.40.173:1883";
         String host = "tcp://119.3.210.123:1883";
